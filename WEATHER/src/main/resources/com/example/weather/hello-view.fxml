@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layer_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="362.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weather.Controller">
+   <children>
+      <ImageView fx:id="cloudImage" fitHeight="196.0" fitWidth="218.0" layoutX="65.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@weather-icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="15.0" layoutY="11.0" prefHeight="72.0" prefWidth="225.0" text="welcme to " textFill="#220202">
+         <font>
+            <Font name="Kefa Regular" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" alignment="CENTER" layoutX="6.0" layoutY="69.0" prefHeight="66.0" prefWidth="267.0" text="Auto Weather" textFill="#033b43" underline="true">
+         <font>
+            <Font name="Kefa Regular" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextButton" layoutX="120.0" layoutY="367.0" mnemonicParsing="false" onAction="#slideOutLayer2" prefHeight="59.0" prefWidth="98.0" stylesheets="@Style.css" text="Get In" />
+      <Pane fx:id="layer_2" layoutX="6.0" layoutY="496.0" prefHeight="450.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <TextField fx:id="ss" layoutX="88.0" layoutY="245.0" prefHeight="55.0" prefWidth="177.0" promptText="Search yout location" stylesheets="@Style.css">
+               <font>
+                  <Font name="Kefa Regular" size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="searchIcon" fitHeight="55.0" fitWidth="52.0" layoutX="276.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@search-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="earthIcon" fitHeight="51.0" fitWidth="43.0" layoutX="31.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@earth-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="countryLabel" alignment="CENTER" layoutX="58.0" layoutY="60.0" prefHeight="55.0" prefWidth="237.0" text="country" textAlignment="CENTER" textFill="#0bbce4" underline="true">
+               <font>
+                  <Font name="Kefa Regular" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="layer_3" layoutX="5.0" layoutY="970.0" prefHeight="578.0" prefWidth="340.0" style="-fx-background-radius: 22;" stylesheets="@Style.css" AnchorPane.leftAnchor="12.0">
+         <children>
+            <ImageView fx:id="locationIcon" fitHeight="215.0" fitWidth="218.0" layoutX="63.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cityName.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="notFound" fitHeight="98.0" fitWidth="111.0" layoutX="23.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@notFound.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="locLabel" alignment="TOP_CENTER" layoutX="150.0" layoutY="314.0" prefHeight="110.0" prefWidth="155.0" text="LOCATION" textFill="#e40b00">
+               <font>
+                  <Font name="Kefa Regular" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="nfLabel" alignment="TOP_CENTER" layoutX="150.0" layoutY="369.0" prefHeight="67.0" prefWidth="145.0" text="NOT FOUND" textFill="#240090">
+               <font>
+                  <Font name="Kefa Regular" size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <ImageView fx:id="windIcon" fitHeight="67.0" fitWidth="78.0" layoutX="33.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@wind.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="TemperatureLabel" alignment="CENTER" layoutX="42.0" layoutY="30.0" prefHeight="55.0" prefWidth="237.0" text="Report" textAlignment="CENTER" textFill="#0bbce4" underline="true">
+               <font>
+                  <Font name="Kefa Regular" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="retryIcon" fitHeight="67.0" fitWidth="61.0" layoutX="256.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@retry.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="conditionPane" layoutX="14.0" layoutY="97.0" prefHeight="110.0" prefWidth="145.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fx:id="weatherConditionIcon" fitHeight="32.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clear.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="weatherConditionValue" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="55.0" prefHeight="51.0" prefWidth="137.0" text="Label" textFill="#222222">
+                     <font>
+                        <Font name="Kefa Regular" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="52.0" layoutY="14.0" prefHeight="32.0" prefWidth="98.0" text="condition">
+                     <font>
+                        <Font name="Kefa Regular" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="temperaturePane" layoutX="184.0" layoutY="97.0" prefHeight="110.0" prefWidth="145.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fx:id="temperatureIcon" fitHeight="43.0" fitWidth="20.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@temperature.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="temperatureValue" alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="58.0" prefHeight="48.0" prefWidth="102.0" text="XX.X" textFill="#1e1d1d">
+                     <font>
+                        <Font name="Kefa Regular" size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="celciousIcon" fitHeight="51.0" fitWidth="32.0" layoutX="105.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@celcious.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="32.0" prefWidth="120.0" text="Temperature">
+                     <font>
+                        <Font name="Kefa Regular" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="infoButton" layoutX="228.0" layoutY="38.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="82.0" stylesheets="@Style.css" text="info" />
+         </children></Pane>
+      <ImageView fx:id="crossIcon" fitHeight="35.0" fitWidth="32.0" layoutX="301.0" layoutY="930.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cross.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="infoPane" layoutX="365.0" layoutY="5.0" prefHeight="494.0" prefWidth="360.0" style="-fx-background-radius: 30;" stylesheets="@Style.css">
+         <children>
+            <Pane fx:id="tempInfoPane" layoutX="26.0" layoutY="41.0" prefHeight="98.0" prefWidth="317.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="61.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@temperature.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="2.0" prefHeight="55.0" prefWidth="155.0" text="Temperature" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CoverSetTemperature" alignment="CENTER_RIGHT" layoutX="77.0" layoutY="36.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="239.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@celcious.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="pressurePane" layoutX="44.0" layoutY="157.0" prefHeight="78.0" prefWidth="123.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@blood-pressure-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="9.0" prefHeight="42.0" prefWidth="82.0" text="pressure" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="setPressure" alignment="CENTER" layoutX="16.0" layoutY="39.0" prefHeight="45.0" prefWidth="107.0" text="XX.X" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="humidityPane" layoutX="202.0" layoutY="157.0" prefHeight="78.0" prefWidth="123.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Humidity.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="7.0" prefHeight="42.0" prefWidth="70.0" text="Humidity" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="setHumidity" alignment="CENTER" layoutX="29.0" layoutY="39.0" prefHeight="45.0" prefWidth="92.0" text="XX.X" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="windInfoPane" layoutX="22.0" layoutY="371.0" prefHeight="85.0" prefWidth="317.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="89.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wind.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="102.0" layoutY="15.0" prefHeight="55.0" prefWidth="212.0" text="Wind and Visibility" textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="sunriseTimePane" layoutX="22.0" layoutY="265.0" prefHeight="85.0" prefWidth="317.0" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="78.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sun-color-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="66.0" layoutY="17.0" prefHeight="51.0" prefWidth="246.0" text="Sun Rise and Sun Set " textFill="#f2eded">
+                     <font>
+                        <Font name="Kefa Regular" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fx:id="doneButton" fitHeight="32.0" fitWidth="32.0" layoutX="314.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@done-icon.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="detailInfoPane" layoutX="365.0" layoutY="507.0" prefHeight="494.0" prefWidth="360.0" style="-fx-background-radius: 20;" stylesheets="@Style.css">
+         <children>
+            <ImageView fx:id="detailInfoCross" fitHeight="32.0" fitWidth="35.0" layoutX="316.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cross.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="sunRisePane" layoutX="745.0" layoutY="650.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="82.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sunrise.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="minTemperatureLabel1" alignment="CENTER" layoutX="114.0" layoutY="23.0" prefHeight="43.0" prefWidth="123.0" text="sunrise" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setSunRiseValue" alignment="CENTER" layoutX="71.0" layoutY="62.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#2c0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator prefWidth="200.0" />
+      <Pane fx:id="minTemperaturePane" layoutX="994.0" layoutY="565.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@snow.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="11.0" prefHeight="55.0" prefWidth="155.0" text="Minimum" textFill="#f8efef">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setMinimumTemperatureValue" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="60.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#1b0101">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="169.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@celcious.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="windSpeedPane" layoutX="1232.0" layoutY="661.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@speed.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="minTemperatureLabel12" alignment="CENTER" layoutX="106.0" layoutY="17.0" prefHeight="45.0" prefWidth="189.0" text="speed and degree" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setSpeedValue" alignment="CENTER" layoutX="66.0" layoutY="57.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#2c0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="setWindDegreeValue" alignment="CENTER" layoutX="176.0" layoutY="62.0" prefHeight="45.0" prefWidth="120.0" text="dee" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="feelsLikeTemperaturePane" layoutX="992.0" layoutY="711.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@feelsLike.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="7.0" prefHeight="55.0" prefWidth="155.0" text="Feels like" textFill="#1e0101">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setFeelsLikeTemperatureValue" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="61.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#1e0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="169.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@celcious.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="maxTemperaturePane" layoutX="992.0" layoutY="860.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="82.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@maxTemperature.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="minTemperatureLabel" alignment="CENTER" layoutX="66.0" layoutY="14.0" prefHeight="43.0" prefWidth="123.0" text="MAximum" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setMaximumTemperatureValue" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="61.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#2c0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="168.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@celcious.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="visibilityPane" layoutX="1232.0" layoutY="803.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@visibility.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="minTemperatureLabel121" alignment="CENTER" layoutX="88.0" layoutY="26.0" prefHeight="43.0" prefWidth="123.0" text="Visibility" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setVisibilityValue" alignment="CENTER" layoutX="71.0" layoutY="66.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#2c0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="sunSetPane" layoutX="745.0" layoutY="797.0" prefHeight="121.0" prefWidth="300.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="82.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sunset.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="minTemperatureLabel11" alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="43.0" prefWidth="123.0" text="SUn set" textFill="#110000">
+               <font>
+                  <Font name="Kefa Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="setSunSetValue" alignment="CENTER" layoutX="74.0" layoutY="60.0" prefHeight="55.0" prefWidth="155.0" text="XX.X" textFill="#2c0202">
+               <font>
+                  <Font name="Kefa Regular" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

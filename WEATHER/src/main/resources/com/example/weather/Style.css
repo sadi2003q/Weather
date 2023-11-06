@@ -1,0 +1,240 @@
+#nextButton {
+    -fx-background-color: linear-gradient(to right, #3498db, #2980b9); /* Gradient background color */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 12px 24px; /* Padding around the text */
+    -fx-border-radius: 30px; /* Larger rounded corners */
+    -fx-background-radius: 30px; /* Rounded background */
+    -fx-effect: dropshadow(gaussian, #333333, 15, 0, 0, 0); /* Drop shadow effect */
+    -fx-transition: all 0.3s; /* Smooth transition */
+}
+#nextButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #2478ab); /* Gradient background color on hover */
+    -fx-effect: dropshadow(gaussian, #333333, 20, 0, 0, 0); /* Larger drop shadow on hover */
+    -fx-scale-x: 1.05; /* Scale the button horizontally on hover */
+    -fx-scale-y: 1.05; /* Scale the button vertically on hover */
+}
+#nextButton:pressed {
+    -fx-background-color: #2478ab; /* Background color when the button is pressed */
+    -fx-effect: dropshadow(gaussian, #333333, 10, 0, 0, 0); /* Smaller drop shadow when pressed */
+    -fx-scale-x: 0.95; /* Slightly scale the button horizontally when pressed */
+    -fx-scale-y: 0.95; /* Slightly scale the button vertically when pressed */
+}
+#ss {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10 5 10;
+    -fx-spacing: 5;
+    -fx-alignment: CENTER_LEFT;
+}
+#ss .search-icon {
+    -fx-shape: "M10 9.9c1.8 0 3.4 0.7 4.7 1.9L18 9.3l0.7 0.7-2.4 2.4c1.1 1.3 1.8 2.9 1.8 4.7 0 5.2-4.8 9.9-9.9 9.9s-9.9-4.8-9.9-9.9c0-5.2 4.8-9.9 9.9-9.9zM10 0C15.5 0 20 4.5 20 10s-4.5 10-10 10S0 15.5 0 10 4.5 0 10 0z";
+    -fx-fill: #777;
+    -fx-scale-shape: 1.5;
+}
+#ss .search-field {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-border-color: #ccc;
+    -fx-pref-width: 300;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #777;
+}
+#ss .search-field:hover, #ss .search-field:focused {
+    -fx-border-color: #55c8d8;
+}
+#ss .clear-button {
+    -fx-shape: "M10 12l4.6-4.6 1.4 1.4L11.4 13l4.6 4.6-1.4 1.4L10 14.4l-4.6 4.6-1.4-1.4L8.6 13 4 8.4l1.4-1.4L10 11.6z";
+    -fx-fill: #777;
+    -fx-scale-shape: 1.2;
+    -fx-cursor: HAND;
+}
+#ss .clear-button:hover {
+    -fx-fill: #ff6b6b;
+}
+#ss:focused {
+    -fx-border-color: #55c8d8;
+}
+#cloudImage {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+#cloudImage {
+    -fx-border-color: #55c8d8;
+    -fx-border-width: 2;
+}
+#cloudImage {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+#cloudImage:hover {
+    -fx-effect: dropshadow(three-pass-box, #55c8d8, 10, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-rotate: 5;
+}
+#cloudImage {
+    -fx-transition: "scale 0.2s, rotate 0.2s";
+}
+#cloudImage {
+    -fx-effect: innershadow(gaussian, #ccc, 10, 0, 0, 0);
+}
+#cloudImage {
+    -fx-background-radius: 10;
+}
+
+#conditionPane, #temperaturePane {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    transition: transform 0.3s;
+}
+#conditionPane, #temperaturePane {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    -fx-backdrop-filter: blur(5px);
+    transition: transform 0.3s;/* Adjust the blur value as needed */
+}
+#conditionPane:hover, #temperaturePane:hover {
+    -fx-transform: scale(1.2);
+}
+#conditionPane, #temperaturePane {
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-transition: "transform 1s";
+}
+#conditionPane:hover, #temperaturePane:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-transition: "transform 1s";
+    -fx-interpolator: "ease-in-out";
+}
+#detailInfoPane, #tempInfoPane,#sunriseTimePane,#pressurePane, #humidityPane, #windInfoPane,#visibilityInfoPane {
+    -fx-background-color:  rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    transition: transform 0.3s;
+}
+#detailInfoPane, #tempInfoPane,#sunriseTimePane,#pressurePane, #humidityPane, #windInfoPane,#visibilityInfoPane {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    -fx-backdrop-filter: blur(5px);
+    transition: transform 0.3s;/* Adjust the blur value as needed */
+}
+
+
+#detailInfoPane, #tempInfoPane:hover,#pressurePane:hover,#sunsetTImeInfoPane:hover, #humidityPane:hover, #windInfoPane:hover,#visibilityInfoPane:hover {
+    -fx-transform: scale(1.2);
+}
+#detailInfoPane{
+    -fx-background-color:  rgba(255, 255, 255, 0.3);
+}
+#infoButton {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9); /* Gradient background color */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 12px 24px; /* Padding around the text */
+    -fx-border-radius: 30px; /* Larger rounded corners */
+    -fx-background-radius: 30px; /* Rounded background */
+    -fx-effect: dropshadow(gaussian, #333333, 15, 0, 0, 0); /* Drop shadow effect */
+    -fx-transition: all 0.3s; /* Smooth transition */
+}
+#infoButton:hover, #tempInfoPane:hover,#pressurePane:hover, #sunriseTimePane:hover, #humidityPane:hover, #windInfoPane:hover,#visibilityInfoPane:hover {
+    -fx-background-color: linear-gradient(to bottom, #2980b9, #2478ab);
+    -fx-effect: dropshadow(gaussian, #333333, 20, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+#infoButton:pressed, #tempInfoPane:pressed,#pressurePane:pressed,#sunriseTimePane:pressed, #humidityPane:pressed, #windInfoPane:pressed,#visibilityInfoPane:pressed{
+    -fx-background-color: #2478ab;
+    -fx-effect: dropshadow(gaussian, #333333, 10, 0, 0, 0);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+#minTemperaturePane,#crossIcon, #detailInfoCross, #feelsLikeTemperaturePane, #maxTemperaturePane{
+    -fx-background-color: rgba(255, 255, 255, 1); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, #333333, 15, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    transition: transform 0.3s;
+}
+#windSpeedPane,#visibilityPane,#minTemperaturePan,#detailInfoCross,#crossIcon, #feelsLikeTemperaturePane, #maxTemperaturePane{
+    -fx-background-color: rgba(255, 255, 255, 1); /* Adjust the color and opacity as needed */
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, #333333, 15, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    -fx-backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+#detailInfoCross:hover,#minTemperaturePan:hover,#crossIcon:hover, #detailInfoCross:hover,#feelsLikeTemperaturePane:hover, #maxTemperaturePane:hover{
+    -fx-transform: scale(1.2);
+    -fx-transition: "transform 1s";
+}
+
+#sunRisePane, #sunSetPane {
+    /*-fx-background-color: rgba(255, 255, 255, 1); !* Adjust the color and opacity as needed *!*/
+    -fx-background-color: linear-gradient(to bottom, #A23E48, #208AAE);
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-border-radius: 10px; /* Border radius for a more rounded look */
+    -fx-effect: dropshadow(gaussian, #333333, 15, 0, 0, 0);
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
+    transition: transform 0.3s;
+}
+
+
+#detailInfoPane{
+    -fx-background-color:linear-gradient(to bottom, #cae9ff, #1b4965) ;
+}
+#infoPane{
+    -fx-background-color:linear-gradient(to top, #55828b, #1b4965) ;
+}
+#layer_3{
+    -fx-background-color:linear-gradient(to right, #231942, #5e548e) ;
+}
+#layer_1{
+    -fx-background-color:linear-gradient(to top, #22577a, #c7f9cc) ;
+}
+#sunRisePane{
+    -fx-background-color:linear-gradient(to bottom, #e9ff70, #70d6ff) ;
+}
+#sunSetPane{
+    -fx-background-color:linear-gradient(to bottom, #e5383b, #ff7b00) ;
+}
+
+#minTemperaturePane{
+    -fx-background-color:linear-gradient(to top, #48cae4, #03045e) ;
+}
+#feelsLikeTemperaturePane{
+    -fx-background-color:linear-gradient(to top, #80ed99, #c7f9cc) ;
+}
+#maxTemperaturePane{
+    -fx-background-color:linear-gradient(to top, #ffff3f, #2b9348) ;
+}
+#visibilityPane{
+    -fx-background-color:linear-gradient(to top, #d9ed92, #99d98c) ;
+}
+#windSpeedPane{
+    -fx-background-color:linear-gradient(to top, #b8b8ff, #ffeedd) ;
+}

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de699935-fecd-44ee-aab3-4599ab624d4c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weather/WeatherApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/Humidity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/Style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/blood-pressure-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/celcious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/cityName.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/cloud-rainbow-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/degree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/done-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/earth-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/feelsLike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/haze.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/lightning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/maxTemperature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/notFound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/raining.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/retry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/search-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/snow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/snow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/speed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/sun-color-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/sunrise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/sunset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/temperature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/visibility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/weather-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/weather/wind.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/com/example/weather/hello-view.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2XWYLkidYCna9kznrvOdRFp4UM8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sadi_/Coding/WEATHER/src/main/resources/com/example/weather&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/weather" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/weather" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/weather" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.weather.Run" />
+      <module name="WEATHER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.weather.WeatherApplication" />
+      <module name="WEATHER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Run" />
+        <item itemvalue="Application.WeatherApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de699935-fecd-44ee-aab3-4599ab624d4c" name="Changes" comment="" />
+      <created>1698746248171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698746248171</updated>
+      <workItem from="1698746249172" duration="264000" />
+      <workItem from="1698746518056" duration="1933000" />
+      <workItem from="1698749506455" duration="8522000" />
+      <workItem from="1698758837563" duration="2918000" />
+      <workItem from="1698762312312" duration="7137000" />
+      <workItem from="1698822669870" duration="7648000" />
+      <workItem from="1698836311394" duration="1807000" />
+      <workItem from="1698854005828" duration="6482000" />
+      <workItem from="1698900198204" duration="1739000" />
+      <workItem from="1698902524656" duration="8059000" />
+      <workItem from="1698920330419" duration="3400000" />
+      <workItem from="1698939088424" duration="11256000" />
+      <workItem from="1698993823686" duration="293000" />
+      <workItem from="1699006213271" duration="144000" />
+      <workItem from="1699007914043" duration="2092000" />
+      <workItem from="1699028892411" duration="1000" />
+      <workItem from="1699029898383" duration="2144000" />
+      <workItem from="1699075040442" duration="792000" />
+      <workItem from="1699079672163" duration="2910000" />
+      <workItem from="1699088255605" duration="6863000" />
+      <workItem from="1699115615626" duration="5178000" />
+      <workItem from="1699149739532" duration="1423000" />
+      <workItem from="1699179611574" duration="98000" />
+      <workItem from="1699179716848" duration="4255000" />
+      <workItem from="1699203340322" duration="4458000" />
+      <workItem from="1699207987647" duration="395000" />
+      <workItem from="1699208469741" duration="111000" />
+      <workItem from="1699252912515" duration="2816000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
