@@ -117,8 +117,6 @@ public class Weather {
         this.cod = cod;
     }
 
-    // Inner classes for nested objects in the JSON response
-
     public class Coord {
         private double lon;
         private double lat;
