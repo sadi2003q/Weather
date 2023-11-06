@@ -15,7 +15,7 @@ public class WeatherApplication {
     public static void WeatherInformation(String cityName) throws URISyntaxException, IOException, InterruptedException {
         HttpClient client= HttpClient.newHttpClient();
         HttpRequest httpRequest= HttpRequest.newBuilder()
-                .uri(new URI("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=32cf7fc4ecb5506bcb0d513c18edb2b5"))
+                .uri(new URI("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ADD_YOUR_OWN_KEY"))
                 .build();
         HttpResponse<String> response=client.send(httpRequest, HttpResponse.BodyHandlers.ofString());
 
